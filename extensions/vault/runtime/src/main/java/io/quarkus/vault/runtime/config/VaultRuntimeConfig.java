@@ -22,6 +22,7 @@ import io.quarkus.vault.runtime.LogConfidentialityLevel;
 public class VaultRuntimeConfig {
 
     public static final String DEFAULT_KUBERNETES_JWT_TOKEN_PATH = "/var/run/secrets/kubernetes.io/serviceaccount/token";
+    public static final String DEFAULT_KUBERNETES_AUTH_PATH = "kubernetes";
     public static final String DEFAULT_KV_SECRET_ENGINE_MOUNT_PATH = "secret";
     public static final String KV_SECRET_ENGINE_VERSION_V1 = "1";
     public static final String KV_SECRET_ENGINE_VERSION_V2 = "2";

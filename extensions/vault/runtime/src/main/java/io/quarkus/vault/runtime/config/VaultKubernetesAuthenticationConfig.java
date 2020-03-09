@@ -1,5 +1,6 @@
 package io.quarkus.vault.runtime.config;
 
+import static io.quarkus.vault.runtime.config.VaultRuntimeConfig.DEFAULT_KUBERNETES_AUTH_PATH;
 import static io.quarkus.vault.runtime.config.VaultRuntimeConfig.DEFAULT_KUBERNETES_JWT_TOKEN_PATH;
 
 import java.util.Optional;
@@ -24,4 +25,10 @@ public class VaultKubernetesAuthenticationConfig {
      */
     @ConfigItem(defaultValue = DEFAULT_KUBERNETES_JWT_TOKEN_PATH)
     public String jwtTokenPath;
+
+    /**
+     * Path for the kubernetes authentication method.
+     */
+    @ConfigItem(defaultValue = DEFAULT_KUBERNETES_AUTH_PATH)
+    public String path;
 }
